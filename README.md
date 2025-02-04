@@ -8,13 +8,13 @@ Este repositório contém atividades de simulação utilizando o microcontrolado
 
   Nesta atividade, um sistema de temporização é projetado para acionar três LEDs (azul, vermelho e verde) a partir do clique em um pushbutton. O comportamento é o seguinte:
   
-  Acionamento dos LEDs: Ao pressionar o botão, todos os LEDs são acesos simultaneamente.
+    - Acionamento dos LEDs: Ao pressionar o botão, todos os LEDs são acesos simultaneamente.
   
-  Sequência de Desligamento: A cada 3 segundos, um LED é desligado em sequência até que todos estejam apagados.
+    - Sequência de Desligamento: A cada 3 segundos, um LED é desligado em sequência até que todos estejam apagados.
   
-  Controle do Botão: O botão só é responsivo após o ciclo completo de desligamento.
+    - Controle do Botão: O botão só é responsivo após o ciclo completo de desligamento.
   
-  BitDogLab: Inclui um experimento utilizando um LED RGB e o Botão A.
+    - BitDogLab: Inclui um experimento utilizando um LED RGB e o Botão A.
 
 2. Temporizador Periódico (Semáforo)
 
