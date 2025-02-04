@@ -49,7 +49,7 @@ void button_callback(uint gpio, uint32_t events)
         gpio_put(BLUE_LED, 1);
         gpio_put(GREEN_LED, 1);
         gpio_put(RED_LED, 1);
-        printf("Todos os LEDs acesos.\n");
+        printf("Iniciando com todos os LEDs acesos.\n");
 
         add_alarm_in_ms(3000, turn_off_first_led_callback, NULL, false);
     }

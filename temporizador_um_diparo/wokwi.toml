@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = 'build/temporizador_um_diparo.uf2'
+elf = 'build/temporizador_um_diparo.elf'
+gdbServerPort=3333
