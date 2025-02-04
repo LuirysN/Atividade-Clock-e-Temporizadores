@@ -18,7 +18,7 @@ volatile bool timer_active = false;
 // Função para desligar o último LED e liberar o botão
 int64_t turn_off_last_led_callback(alarm_id_t id, void *user_data) {
     gpio_put(GREEN_LED, 0);
-    printf("LED Verde desligado.\n");
+    printf("LED Verde desligado.\n\n");
     timer_active = false;
     return 0;
 }
@@ -26,7 +26,7 @@ int64_t turn_off_last_led_callback(alarm_id_t id, void *user_data) {
 // Função para desligar o segundo LED e programar o próximo callback
 int64_t turn_off_second_led_callback(alarm_id_t id, void *user_data) {
     gpio_put(RED_LED, 0);
-    printf("LED Vermelho desligado.\n");
+    printf("LED Vermelho desligado.\n\n");
     add_alarm_in_ms(3000, turn_off_last_led_callback, NULL, false);
     return 0;
 }
@@ -34,7 +34,7 @@ int64_t turn_off_second_led_callback(alarm_id_t id, void *user_data) {
 // Função para desligar o primeiro LED e programar o próximo callback
 int64_t turn_off_first_led_callback(alarm_id_t id, void *user_data) {
     gpio_put(BLUE_LED, 0);
-    printf("LED Azul desligado.\n");
+    printf("LED Azul desligado.\n\n");
     add_alarm_in_ms(3000, turn_off_second_led_callback, NULL, false);
     return 0;
 }
@@ -56,7 +56,7 @@ void button_callback(uint gpio, uint32_t events) {
         gpio_put(BLUE_LED, 1);
         gpio_put(GREEN_LED, 1);
         gpio_put(RED_LED, 1);
-        printf("Todos os LEDs acesos.\n");
+        printf("Todos os LEDs acesos.\n\n");
 
         add_alarm_in_ms(3000, turn_off_first_led_callback, NULL, false);
     }
