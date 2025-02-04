@@ -16,22 +16,22 @@ Este repositório contém atividades de simulação utilizando o microcontrolado
   
     - BitDogLab: Inclui um experimento utilizando um LED RGB e o Botão A.
 
-2. Temporizador Periódico (Semáforo)
+  2. Temporizador Periódico (Semáforo)
 
-Nesta atividade, é implementado um semáforo com LEDs (vermelho, amarelo e verde), simulando um ciclo de trânsito:
-
-Ciclo do Semáforo: O LED vermelho acende primeiro, seguido pelo amarelo e depois o verde, com um intervalo de 3 segundos entre cada transição.
-
-Mensagens Seriais: O código imprime mensagens na porta serial a cada segundo, informando o status do sistema.
-
-BitDogLab: Inclui um experimento com o LED RGB para representar o ciclo do semáforo.
-
-Tecnologias Utilizadas
-
-Microcontrolador: Raspberry Pi Pico W
-
-Simulador: Wokwi
-
-SDK: Pico SDK (para manipulação dos temporizadores)
-
-BitDogLab: Para experimentos adicionais com o LED RGB
+  Nesta atividade, é implementado um semáforo com LEDs (vermelho, amarelo e verde), simulando um ciclo de trânsito:
+  
+    - Ciclo do Semáforo: O LED vermelho acende primeiro, seguido pelo amarelo e depois o verde, com um intervalo de 3 segundos entre cada transição.
+    
+    - Mensagens Seriais: O código imprime mensagens na porta serial a cada segundo, informando o status do sistema.
+    
+    - BitDogLab: Inclui um experimento com o LED RGB para representar o ciclo do semáforo.
+    
+    - Tecnologias Utilizadas
+    
+    - Microcontrolador: Raspberry Pi Pico W
+    
+    - Simulador: Wokwi
+    
+    - SDK: Pico SDK (para manipulação dos temporizadores)
+    
+    - BitDogLab: Para experimentos adicionais com o LED RGB
